@@ -1,0 +1,6 @@
+model\SignInBean.class
+controller\UsuarioController.class
+repository\UsuarioRepository.class
+model\Usuario.class
+model\Telefone.class
+persistence\DatabaseConnection.class
