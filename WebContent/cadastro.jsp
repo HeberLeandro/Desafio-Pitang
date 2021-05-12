@@ -106,7 +106,7 @@
 	<script type="text/javascript">	
 		var usuario;
 		window.onload = function(){
-			string url = window.location.href;
+			var url = window.location.href;
 			
 			if (url.includes('id')) {
 				if (sessionStorage.getItem('usuario')) {
