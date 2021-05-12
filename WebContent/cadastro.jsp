@@ -106,11 +106,15 @@
 	<script type="text/javascript">	
 		var usuario;
 		window.onload = function(){
-			if (sessionStorage.getItem('usuario')) {
-		        usuario = JSON.parse(sessionStorage.getItem('usuario'));
-		    } else {
-		        window.location.href = 'index.jsp';
-		    }
+			string url = window.location.href;
+			
+			if (url.includes('id')) {
+				if (sessionStorage.getItem('usuario')) {
+			        usuario = JSON.parse(sessionStorage.getItem('usuario'));
+			    } else {
+			        window.location.href = 'index.jsp';
+			    }
+			}
 		}
 		
 		$("#telefone1, #telefone2, #telefone3, .telefone").mask("(00) 90000-0000");
